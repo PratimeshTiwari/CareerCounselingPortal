@@ -1,0 +1,41 @@
+# Ignore Gradle project-specific files
+.gradle/
+build/
+
+# Ignore IntelliJ IDEA-specific files
+.idea/
+*.iml
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore log files and temp files
+*.log
+*.tmp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore user-specific files
+*.swp
+*.swo
+*.bak
+
+# Ignore Gradle wrapper logs
+gradle/wrapper/gradle-wrapper.jar
+
+# Ignore your secret API key file
+src/main/java/com/example/careercounseling/api/key.java
+app/src/main/java/com/example/careercounseling/api/key.java
+
+
+# Ignore distribution archives
+*.zip
+*.tar.gz
+
+# Ignore user data
+users.dat
+
+# Ignore generated files
+out/
