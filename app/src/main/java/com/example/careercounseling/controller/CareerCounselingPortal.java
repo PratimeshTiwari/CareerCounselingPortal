@@ -12,7 +12,7 @@ public class CareerCounselingPortal {
 
     private GeminiAPIService geminiService;
     private Scanner scanner;
-    private Student currentStudent; // Changed to class-level variable
+    private Student currentStudent; 
     private List<User> users;
     private static final String USER_DATA_FILE = "users.dat";
 
