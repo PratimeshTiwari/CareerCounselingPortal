@@ -10,7 +10,6 @@ import org.json.JSONObject;
 import com.example.careercounseling.api.key;
 
 public class GeminiAPIService {
-    // Updated to use the gemini-2.0-flash model
         private static final String API_KEY = key.API_KEY;
     private static final String GEMINI_API_URL =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key="
@@ -43,7 +42,6 @@ public class GeminiAPIService {
                 conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
                 conn.setDoOutput(true);
 
-                // minimal JSON: no extra fields
                 String body = "{\"contents\":[{\"parts\":[{\"text\":\""
                         + prompt + "\"}]}]}";
 
@@ -56,7 +54,6 @@ public class GeminiAPIService {
                         ? conn.getInputStream()
                         : conn.getErrorStream();
 
-                // read all
                 BufferedReader br = new BufferedReader(
                         new InputStreamReader(in, StandardCharsets.UTF_8)
                 );
