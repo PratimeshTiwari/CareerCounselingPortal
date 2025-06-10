@@ -22,12 +22,9 @@ src/main/java/com/example/careercounseling/api/key.java
 app/src/main/java/com/example/careercounseling/api/key.java
 
 
-# Ignore distribution archives
 *.zip
 *.tar.gz
 
-# Ignore user data
 users.dat
 
-# Ignore generated files
 out/
